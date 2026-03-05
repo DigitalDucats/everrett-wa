@@ -1,0 +1,16 @@
+{
+  "brand_name": "Danika Plumbing",
+  "money_site_url": "https://danikaplumbing.com/",
+  "gbp_url": "https://maps.app.goo.gl/G4mpMimYnUiYeGJ98",
+  "primary_city": "Everett, WA",
+  "service_area_neighborhoods": [
+    "Silver Lake",
+    "Riverside",
+    "Harborview-Seahurst-Glenhaven"
+  ],
+  "local_entities": [
+    {"name":"City of Everett","url":"https://www.everettwa.gov/"},
+    {"name":"Snohomish County","url":"https://snohomishcountywa.gov/"},
+    {"name":"Washington L&I","url":"https://www.lni.wa.gov/"}
+  ]
+}
