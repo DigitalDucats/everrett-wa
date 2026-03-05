@@ -1,1 +1,306 @@
+/* =============================================
+   Everett WA Home Services Guide – style.css
+   ============================================= */
 
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2c2c2c;
+  background: #f7f8fa;
+  line-height: 1.7;
+}
+
+a { color: #1a5fa8; text-decoration: none; }
+a:hover { text-decoration: underline; color: #0d3f72; }
+
+img { max-width: 100%; display: block; }
+
+/* --- Typography --- */
+h1 { font-size: 2.2rem; color: #0d3f72; margin-bottom: .5rem; line-height: 1.25; }
+h2 { font-size: 1.55rem; color: #1a5fa8; margin: 2rem 0 .6rem; }
+h3 { font-size: 1.2rem; color: #2c2c2c; margin: 1.4rem 0 .4rem; }
+p  { margin-bottom: 1rem; }
+ul, ol { margin: .5rem 0 1rem 1.4rem; }
+li { margin-bottom: .35rem; }
+
+/* --- Layout --- */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* --- Header --- */
+.site-header {
+  background: linear-gradient(135deg, #0d3f72 0%, #1a5fa8 100%);
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.site-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: .02em;
+}
+.site-logo span { color: #7ecbf5; }
+
+/* --- Navigation --- */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem;
+}
+
+.main-nav a {
+  display: block;
+  color: #d6ecff;
+  padding: .45rem .85rem;
+  border-radius: 4px;
+  font-size: .92rem;
+  font-weight: 500;
+  transition: background .2s, color .2s;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: rgba(255,255,255,.18);
+  color: #fff;
+}
+
+/* --- Hero Banner --- */
+.hero {
+  background: linear-gradient(160deg, #0d3f72 0%, #1874cc 60%, #3a9ad9 100%);
+  color: #fff;
+  padding: 4rem 0 3.5rem;
+  text-align: center;
+}
+
+.hero h1 { color: #fff; font-size: 2.6rem; }
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: #b8dcf8;
+  max-width: 680px;
+  margin: .8rem auto 1.8rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform .15s, box-shadow .15s;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.18); text-decoration: none; }
+.btn-primary { background: #fff; color: #0d3f72; }
+.btn-secondary { background: transparent; border: 2px solid #fff; color: #fff; margin-left: .75rem; }
+
+/* --- Page Header (inner pages) --- */
+.page-header {
+  background: linear-gradient(135deg, #0d3f72 0%, #1874cc 100%);
+  color: #fff;
+  padding: 3rem 0 2.5rem;
+}
+.page-header h1 { color: #fff; }
+.page-header p { color: #b8dcf8; font-size: 1.05rem; max-width: 700px; }
+
+/* --- Main Content --- */
+.main-content {
+  flex: 1;
+  padding: 2.5rem 0 3rem;
+}
+
+/* --- Cards / Service Grid --- */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  border-top: 4px solid #1a5fa8;
+  transition: box-shadow .2s;
+}
+.card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.13); }
+.card h3 { margin-top: 0; color: #0d3f72; }
+.card .card-icon { font-size: 2rem; margin-bottom: .6rem; }
+
+/* --- Plumber Listing Cards --- */
+.plumber-list { display: flex; flex-direction: column; gap: 1.5rem; margin: 1.5rem 0; }
+
+.plumber-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  border-left: 5px solid #1a5fa8;
+}
+.plumber-card.featured { border-left-color: #e07b00; background: #fffaf2; }
+
+.plumber-info { flex: 1; min-width: 200px; }
+.plumber-info h3 { margin-top: 0; }
+.badge {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: .2rem .65rem;
+  border-radius: 20px;
+  margin-left: .5rem;
+  vertical-align: middle;
+}
+.badge-featured { background: #e07b00; color: #fff; }
+.badge-licensed { background: #1a5fa8; color: #fff; }
+
+.plumber-meta { font-size: .9rem; color: #555; }
+.plumber-meta span { margin-right: 1rem; }
+
+/* --- FAQ Section --- */
+.faq-list { margin: 1rem 0 2rem; }
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,.07);
+}
+.faq-item h3 { color: #0d3f72; margin-top: 0; font-size: 1.05rem; }
+.faq-item p { margin: 0; }
+
+/* --- Info Box / Callout --- */
+.callout {
+  border-left: 4px solid #1a5fa8;
+  background: #eaf3ff;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+.callout.warning { border-left-color: #e07b00; background: #fff5e6; }
+.callout.success { border-left-color: #1e8a4a; background: #e8f7ee; }
+
+/* --- Two-column layout --- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+/* --- Table --- */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.styled-table th {
+  background: #0d3f72;
+  color: #fff;
+  padding: .75rem 1rem;
+  text-align: left;
+  font-size: .95rem;
+}
+.styled-table td { padding: .7rem 1rem; border-bottom: 1px solid #e8ecf0; font-size: .93rem; }
+.styled-table tr:last-child td { border-bottom: none; }
+.styled-table tr:hover td { background: #f0f6ff; }
+
+/* --- Breadcrumb --- */
+.breadcrumb { font-size: .88rem; color: #888; margin-bottom: 1.5rem; }
+.breadcrumb a { color: #1a5fa8; }
+.breadcrumb span { margin: 0 .4rem; }
+
+/* --- Section Divider --- */
+.section-divider { border: none; border-top: 2px solid #e4e9f0; margin: 2.5rem 0; }
+
+/* --- Footer --- */
+.site-footer {
+  background: #0d3f72;
+  color: #b8d4ef;
+  padding: 2.5rem 0 1.5rem;
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col h4 { color: #fff; margin-bottom: .75rem; font-size: 1rem; }
+.footer-col ul { list-style: none; margin: 0; padding: 0; }
+.footer-col li { margin-bottom: .4rem; }
+.footer-col a { color: #90bfe8; font-size: .9rem; }
+.footer-col a:hover { color: #fff; }
+.footer-col p { font-size: .9rem; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.12);
+  padding-top: 1.25rem;
+  font-size: .84rem;
+  text-align: center;
+  color: #789ab8;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  h1 { font-size: 1.7rem; }
+  .hero h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.3rem; }
+
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .main-nav ul { gap: .1rem; }
+  .main-nav a { padding: .4rem .65rem; font-size: .85rem; }
+
+  .two-col { grid-template-columns: 1fr; }
+  .btn-secondary { margin-left: 0; margin-top: .5rem; }
+  .hero { padding: 2.5rem 0 2rem; }
+  .page-header { padding: 2rem 0 1.75rem; }
+}
+
+@media (max-width: 480px) {
+  .plumber-card { flex-direction: column; }
+  .styled-table { font-size: .82rem; }
+  .styled-table th, .styled-table td { padding: .55rem .7rem; }
+}

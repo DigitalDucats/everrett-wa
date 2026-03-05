@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Everett WA Home Services Guide</title>
+  <meta name="description" content="Contact the Everett WA Home Services Guide. An informational resource for homeowners in Everett, Washington and Snohomish County. Questions, corrections, and content inquiries welcome.">
+  <link rel="stylesheet" href="style.css">
 
+  <!-- WebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact – Everett WA Home Services Guide",
+    "description": "Contact page for the Everett WA Home Services Guide, an informational resource for homeowners in Everett, Washington and Snohomish County.",
+    "url": "https://everetthomeservices.com/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Everett WA Home Services Guide",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Everett",
+        "addressRegion": "WA",
+        "addressCountry": "US"
+      },
+      "areaServed": ["Everett WA", "Snohomish County", "Puget Sound Region"]
+    }
+  }
+  </script>
+</head>
+<body class="site-wrapper">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">Everett <span>Home Services</span> Guide</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plumbing-everett.html">Plumbing</a></li>
+          <li><a href="best-plumbers-everett-wa.html">Best Plumbers</a></li>
+          <li><a href="everett-plumbing-permits.html">Permits</a></li>
+          <li><a href="everett-water-heater-repair.html">Water Heaters</a></li>
+          <li><a href="everett-drain-cleaning.html">Drain Cleaning</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>›</span> Contact</div>
+      <h1>Contact the Everett WA Home Services Guide</h1>
+      <p>Questions, content inquiries, or feedback about home services in Everett, Washington.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <div class="two-col">
+        <!-- Left: About this site -->
+        <div>
+          <h2>About This Resource</h2>
+          <p>The <strong>Everett WA Home Services Guide</strong> is an informational resource created to help homeowners in <strong>Everett, Washington</strong> and throughout <strong>Snohomish County</strong> navigate local home services — from finding a licensed plumber to understanding permit requirements and maintaining key home systems.</p>
+
+          <p>We are not a plumbing company or contracting service. We do not dispatch technicians or provide quotes. Our goal is to provide clear, locally focused information to help Everett-area homeowners make confident, informed decisions about their homes.</p>
+
+          <h3>Our Coverage Area</h3>
+          <p>Our content is focused on:</p>
+          <ul>
+            <li><strong>Everett, WA</strong> — the primary city of focus</li>
+            <li><strong>Snohomish County</strong> — county-level regulations and service area context</li>
+            <li><strong>Puget Sound region</strong> — broader Pacific Northwest home and climate context</li>
+            <li>Nearby communities: Marysville, Lynnwood, Mukilteo, Edmonds, Mill Creek</li>
+          </ul>
+
+          <h3>Looking for a Plumber?</h3>
+          <p>If you need a licensed plumber in Everett right now, visit our <a href="best-plumbers-everett-wa.html">Best Plumbers in Everett WA</a> page for our recommended local contractors.</p>
+
+          <p>For permit information, visit our <a href="everett-plumbing-permits.html">Everett Plumbing Permits guide</a> or contact the <strong>City of Everett Development Services</strong> directly at (425) 257-8810.</p>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div>
+          <h2>Send Us a Message</h2>
+          <p>Use the form below for content questions, corrections, or general inquiries about the site. For plumbing emergencies, please contact a licensed Everett plumber directly — this is an informational site only.</p>
+
+          <form style="margin-top:1rem;" onsubmit="handleFormSubmit(event)">
+            <div style="margin-bottom:1rem;">
+              <label for="contact-name" style="display:block;font-weight:600;margin-bottom:.35rem;">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required
+                style="width:100%;padding:.6rem .85rem;border:1.5px solid #c8d4e0;border-radius:6px;font-size:.97rem;font-family:inherit;transition:border-color .2s;"
+                onfocus="this.style.borderColor='#1a5fa8'" onblur="this.style.borderColor='#c8d4e0'">
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="contact-email" style="display:block;font-weight:600;margin-bottom:.35rem;">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="jane@example.com" required
+                style="width:100%;padding:.6rem .85rem;border:1.5px solid #c8d4e0;border-radius:6px;font-size:.97rem;font-family:inherit;transition:border-color .2s;"
+                onfocus="this.style.borderColor='#1a5fa8'" onblur="this.style.borderColor='#c8d4e0'">
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="contact-subject" style="display:block;font-weight:600;margin-bottom:.35rem;">Subject</label>
+              <select id="contact-subject" name="subject"
+                style="width:100%;padding:.6rem .85rem;border:1.5px solid #c8d4e0;border-radius:6px;font-size:.97rem;font-family:inherit;background:#fff;transition:border-color .2s;"
+                onfocus="this.style.borderColor='#1a5fa8'" onblur="this.style.borderColor='#c8d4e0'">
+                <option value="">— Select a topic —</option>
+                <option value="content-question">Question about site content</option>
+                <option value="correction">Content correction or update</option>
+                <option value="plumber-listing">Suggest a plumber listing</option>
+                <option value="partnership">Partnership / advertising inquiry</option>
+                <option value="general">General feedback</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="contact-location" style="display:block;font-weight:600;margin-bottom:.35rem;">Your Location (optional)</label>
+              <input type="text" id="contact-location" name="location" placeholder="e.g. North Everett, Marysville, Mukilteo"
+                style="width:100%;padding:.6rem .85rem;border:1.5px solid #c8d4e0;border-radius:6px;font-size:.97rem;font-family:inherit;transition:border-color .2s;"
+                onfocus="this.style.borderColor='#1a5fa8'" onblur="this.style.borderColor='#c8d4e0'">
+            </div>
+
+            <div style="margin-bottom:1.5rem;">
+              <label for="contact-message" style="display:block;font-weight:600;margin-bottom:.35rem;">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell us what you're looking for or how we can help..." required
+                style="width:100%;padding:.6rem .85rem;border:1.5px solid #c8d4e0;border-radius:6px;font-size:.97rem;font-family:inherit;resize:vertical;transition:border-color .2s;"
+                onfocus="this.style.borderColor='#1a5fa8'" onblur="this.style.borderColor='#c8d4e0'"></textarea>
+            </div>
+
+            <button type="submit"
+              style="display:inline-block;padding:.75rem 2rem;background:#1a5fa8;color:#fff;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;transition:background .2s;"
+              onmouseover="this.style.background='#0d3f72'" onmouseout="this.style.background='#1a5fa8'">
+              Send Message
+            </button>
+          </form>
+
+          <div id="form-success" style="display:none;" class="callout success" style="margin-top:1rem;">
+            <strong>Message received!</strong> Thank you for reaching out. We'll follow up via email if a response is needed.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- Key Local Contacts -->
+      <h2>Useful Everett &amp; Snohomish County Contacts</h2>
+      <p>For official permit, utility, or service questions, here are the relevant local authorities in Everett and Snohomish County:</p>
+
+      <div class="service-grid">
+        <div class="card">
+          <h3>🏛️ City of Everett Development Services</h3>
+          <p>For plumbing permits, building inspections, and code questions within Everett city limits.</p>
+          <p>2930 Wetmore Ave, Suite 8-A<br>Everett, WA 98201<br>
+          <strong>Phone:</strong> (425) 257-8810<br>
+          <strong>Web:</strong> everettwa.gov/building</p>
+        </div>
+        <div class="card">
+          <h3>🔧 City of Everett Public Works</h3>
+          <p>For sewer connection permits, water service questions, and right-of-way work in Everett.</p>
+          <p>3200 Cedar St<br>Everett, WA 98201<br>
+          <strong>Phone:</strong> (425) 257-8800<br>
+          <strong>Web:</strong> everettwa.gov/publicworks</p>
+        </div>
+        <div class="card">
+          <h3>🗺️ Snohomish County PDS</h3>
+          <p>For permits and code questions for properties in unincorporated Snohomish County.</p>
+          <p>3000 Rockefeller Ave, M/S 604<br>Everett, WA 98201<br>
+          <strong>Phone:</strong> (425) 388-3311<br>
+          <strong>Web:</strong> snohomishcountywa.gov/pds</p>
+        </div>
+        <div class="card">
+          <h3>⚡ Snohomish County PUD</h3>
+          <p>For electrical service, energy rebates on heat pump water heaters, and utility account questions.</p>
+          <p>2320 California St<br>Everett, WA 98201<br>
+          <strong>Phone:</strong> 425-783-1000<br>
+          <strong>Web:</strong> snopud.com</p>
+        </div>
+        <div class="card">
+          <h3>🏗️ WA Dept. of Labor &amp; Industries</h3>
+          <p>Verify any contractor's Washington State license before hiring. Search the L&amp;I license lookup online.</p>
+          <p><strong>Phone:</strong> 1-800-647-0982<br>
+          <strong>Web:</strong> lni.wa.gov/licensing-permits/contractors</p>
+        </div>
+        <div class="card">
+          <h3>🚑 Plumbing Emergency?</h3>
+          <p>For active leaks, burst pipes, or sewer backups — contact a licensed Everett plumber directly. See our recommended list.</p>
+          <p><a href="best-plumbers-everett-wa.html">→ Best Plumbers in Everett WA</a></p>
+          <p style="color:#888;font-size:.88rem;margin-top:.5rem;">For gas leaks, call <strong>Puget Sound Energy: 1-888-225-5773</strong> and evacuate immediately.</p>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="callout">
+        <strong>Disclaimer:</strong> The Everett WA Home Services Guide is an informational resource only. We do not provide plumbing services, dispatch contractors, or guarantee the quality of any listed business. All permit and code information should be verified directly with the City of Everett or Snohomish County before beginning any project. Content is provided for general informational purposes and may not reflect the most current regulations.
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.style.display = 'none';
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>Everett Home Services Guide</h4>
+          <p>A local resource for homeowners in Everett, Washington and throughout Snohomish County and the Puget Sound region.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Plumbing Resources</h4>
+          <ul>
+            <li><a href="plumbing-everett.html">Plumbing Services in Everett</a></li>
+            <li><a href="best-plumbers-everett-wa.html">Best Plumbers in Everett WA</a></li>
+            <li><a href="everett-plumbing-permits.html">Plumbing Permits</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Home Systems</h4>
+          <ul>
+            <li><a href="everett-water-heater-repair.html">Water Heater Repair</a></li>
+            <li><a href="everett-drain-cleaning.html">Drain Cleaning</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Area</h4>
+          <ul>
+            <li>Everett, WA</li>
+            <li>Snohomish County</li>
+            <li>Puget Sound Region</li>
+            <li>Marysville, Lynnwood</li>
+            <li>Mukilteo, Edmonds</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Everett WA Home Services Guide. Serving homeowners in Everett and Snohomish County, Washington.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
